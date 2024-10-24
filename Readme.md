@@ -9,15 +9,14 @@ This project implements linear regression and calculates the Pearson correlation
 - [Linear Regression and Pearson Correlation Coefficient](#linear-regression-and-pearson-correlation-coefficient)
   - [Overview](#overview)
   - [Table of Contents](#table-of-contents)
-  - [What is Linear Regression?](#what-is-linear-regression)
     - [Applications of Linear Regression](#applications-of-linear-regression)
   - [What is the Pearson Correlation Coefficient?](#what-is-the-pearson-correlation-coefficient)
     - [Applications of Pearson Correlation Coefficient](#applications-of-pearson-correlation-coefficient)
   - [Getting Started](#getting-started)
   - [Clone the Repository](#clone-the-repository)
   - [Usage](#usage)
-
-## What is Linear Regression?
+  - [Error Handling](#error-handling)
+  - [License](#license)
 
 Linear regression is a statistical method used to find a straight line that best fits a set of data points. It helps us understand the relationship between two variables:
 
@@ -88,3 +87,33 @@ Expected output:
 Linear Regression Line: y = -8.742857x + 153.857143
 Pearson Correlation Coefficient: -0.5330331012
 ```
+## Error Handling
+The program runs even in a scenario where the data set has negatives.
+```bash
+-189
+113
+121
+-114
+-145
+110
+```
+The expected output will look something like:
+```bash
+Linear Regression Line: y = 13.885714 + -52.047619
+Pearson Correlation Coefficient: 0.1772088416
+```
+The program also hanmdles edge cases where the data set has decimal values
+```bash
+189.8
+113.6
+121.7
+114.9
+145.1
+110
+```
+The expected output will look something like this:
+```bash
+Linear Regression Line: y = -8.894286 + 154.752381
+Pearson Correlation Coefficient: -0.5408937201
+```
+## License
